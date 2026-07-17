@@ -21,13 +21,10 @@ const PRODUCTS = [
       "Acesso imediato após o pagamento",
     ],
     image: "assets/capa-engenharia-software-ia.png",
-    price: "R$ 19,99",
+    price: "R$ 24,99",
     priceNote: "pagamento único",
-    // >>> COLE AQUI O LINK DE CHECKOUT DO KIWIFY <<<
     checkoutUrl: "https://pay.kiwify.com.br/S0zc5tr",
   },
-
-  // Exemplo de próximo produto (remova o comentário e edite):
   // {
   //   id: "meu-proximo-produto",
   //   badge: "E-book",
