@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GB Store — Cursos e Livros de Programação</title>
+  <meta name="description" content="Livros-curso e materiais de engenharia de software por Guilherme Barbosa Pereira." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">
+        <span class="logo-mark"></span>
+        <span class="logo-text">GB<span class="logo-accent">Store</span></span>
+      </a>
+      <nav class="nav">
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <p class="hero-kicker">// materiais para quem programa de verdade</p>
+      <h1>Aprenda engenharia de software<br /><span class="gradient-text">na era da IA</span></h1>
+      <p class="hero-sub">
+        Livros-curso e materiais práticos para construir a base que a IA não substitui:
+        pensar como engenheiro.
+      </p>
+      <a class="btn btn-primary" href="#produtos">Ver produtos ↓</a>
+    </div>
+  </section>
+
+  <main id="produtos" class="container">
+    <h2 class="section-title">Produtos</h2>
+    <div id="product-grid" class="product-grid"></div>
+  </main>
+
+  <section id="sobre" class="about">
+    <div class="container about-inner">
+      <h2 class="section-title">Sobre</h2>
+      <p>
+        Materiais criados por <strong>Guilherme Barbosa Pereira</strong> — feitos para quem quer
+        aprender a profissão de verdade, com laboratórios, projetos guiados e planos de estudo,
+        e não apenas mais um tutorial.
+      </p>
+      <ul class="trust-row">
+        <li>🔒 Pagamento seguro via Kiwify</li>
+        <li>⚡ Acesso imediato</li>
+        <li>📄 Nota fiscal emitida</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 GB Store · Guilherme Barbosa Pereira</span>
+      <span>Pagamentos processados pela Kiwify</span>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
