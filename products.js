@@ -21,6 +21,15 @@ const PRODUCTS = [
       "Acesso imediato após o pagamento",
     ],
     image: "assets/capa-engenharia-software-ia.png",
+    // Páginas de amostra (deixe [] para não mostrar o botão "Ver amostra")
+    sample: [
+      "assets/amostra/pag-02.jpg",
+      "assets/amostra/pag-23.jpg",
+      "assets/amostra/pag-24.jpg",
+      "assets/amostra/pag-25.jpg",
+      "assets/amostra/pag-26.jpg",
+      "assets/amostra/pag-27.jpg",
+    ],
     price: "R$ 24,99",
     priceNote: "pagamento único",
     checkoutUrl: "https://pay.kiwify.com.br/S0zc5tr",
