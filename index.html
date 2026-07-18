@@ -7,17 +7,14 @@
   <meta name="description" content="Livros-curso e materiais de engenharia de software por Guilherme Barbosa Pereira." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="#">
-        <span class="logo-mark"></span>
-        <span class="logo-text">GB<span class="logo-accent">Store</span></span>
-      </a>
+      <a class="logo" href="#">GB Store</a>
       <nav class="nav">
         <a href="#produtos">Produtos</a>
         <a href="#sobre">Sobre</a>
@@ -27,18 +24,20 @@
 
   <section class="hero">
     <div class="container">
-      <h1>Aprenda engenharia de software<br /><span class="gradient-text">na era da IA</span></h1>
+      <h1>Aprenda engenharia de software<br />de forma prática e eficiente</h1>
       <p class="hero-sub">
         Livros-curso e materiais práticos para construir a base que a IA não substitui:
         pensar como engenheiro.
       </p>
-      <a class="btn btn-primary" href="#produtos">Ver produtos ↓</a>
+      <a class="hero-link" href="#produtos">Ver produtos <span aria-hidden="true">›</span></a>
     </div>
   </section>
 
-  <main id="produtos" class="container">
-    <h2 class="section-title">Produtos</h2>
-    <div id="product-grid" class="product-grid"></div>
+  <main id="produtos" class="products-section">
+    <div class="container">
+      <h2 class="section-title">Produtos</h2>
+      <div id="product-grid" class="product-grid"></div>
+    </div>
   </main>
 
   <section id="sobre" class="about">
@@ -50,9 +49,9 @@
         e não apenas mais um tutorial.
       </p>
       <ul class="trust-row">
-        <li>🔒 Pagamento seguro via Kiwify</li>
-        <li>⚡ Acesso imediato</li>
-        <li>📄 Nota fiscal emitida</li>
+        <li>Pagamento seguro via Kiwify</li>
+        <li>Acesso imediato</li>
+        <li>Nota fiscal emitida</li>
       </ul>
     </div>
   </section>
