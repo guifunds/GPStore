@@ -37,9 +37,11 @@
       "      </div>" +
       '      <div class="buy-actions">' +
       sampleBtn +
-      '        <a class="btn btn-primary btn-buy" href="' + p.checkoutUrl + '" target="_blank" rel="noopener">' +
-      "          Comprar agora" +
-      "        </a>" +
+      (p.comingSoon
+        ? '        <span class="btn btn-disabled">Em breve</span>'
+        : '        <a class="btn btn-primary btn-buy" href="' + p.checkoutUrl + '" target="_blank" rel="noopener">' +
+          "          Comprar agora" +
+          "        </a>") +
       "      </div>" +
       "    </div>" +
       "  </div>" +
@@ -88,7 +90,17 @@
 
   function open(product) {
     pages = product.sample;
-    buyLink.href = product.checkoutUrl;
+    if (product.comingSoon) {
+      buyLink.textContent = "Em breve";
+      buyLink.classList.add("btn-disabled");
+      buyLink.classList.remove("btn-primary");
+      buyLink.removeAttribute("href");
+    } else {
+      buyLink.textContent = "Gostou? Comprar agora";
+      buyLink.classList.add("btn-primary");
+      buyLink.classList.remove("btn-disabled");
+      buyLink.href = product.checkoutUrl;
+    }
     modal.hidden = false;
     document.body.style.overflow = "hidden";
     show(0);

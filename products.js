@@ -34,17 +34,35 @@ const PRODUCTS = [
     priceNote: "pagamento único",
     checkoutUrl: "https://pay.kiwify.com.br/S0zc5tr",
   },
-  // {
-  //   id: "meu-proximo-produto",
-  //   badge: "E-book",
-  //   title: "Título do produto",
-  //   subtitle: "Frase curta de apoio.",
-  //   description: "Descrição mais longa do produto.",
-  //   features: ["Benefício 1", "Benefício 2"],
-  //   image: "assets/imagem.png",
-  //   priceOld: "",
-  //   price: "R$ 29,90",
-  //   priceNote: "pagamento único",
-  //   checkoutUrl: "https://pay.kiwify.com.br/OUTRO-LINK",
-  // },
+  {
+    id: "entrevistas-tecnicas",
+    badge: "Livro-Curso · PDF · Vol. 02",
+    title: "Entrevistas Técnicas",
+    subtitle:
+      "Os exercícios e testes que realmente caem nos processos seletivos de hoje.",
+    description:
+      "Seis partes, do jogo da entrevista à referência de consulta rápida: os padrões por trás das questões, soluções comentadas em Python, Java, C e PHP, e uma trilha de preparação completa, da fundação ao simulado.",
+    features: [
+      "49 páginas em formato de curso",
+      "3 laboratórios cronometrados + simulados completos",
+      "Caderno com 8 questões e soluções comentadas",
+      "SQL, debugging, code review e system design",
+      "Trilha de 12 etapas + banco de perguntas de screening",
+    ],
+    image: "assets/capa-entrevistas-tecnicas.png",
+    sample: [
+      "assets/amostra-entrevistas/pag-02.jpg",
+      "assets/amostra-entrevistas/pag-16.jpg",
+      "assets/amostra-entrevistas/pag-17.jpg",
+      "assets/amostra-entrevistas/pag-18.jpg",
+      "assets/amostra-entrevistas/pag-19.jpg",
+      "assets/amostra-entrevistas/pag-20.jpg",
+    ],
+    price: "R$ 24,99",
+    priceNote: "pagamento único",
+    // Produto ainda sem checkout: botão vira "Em breve".
+    // Quando lançar, troque para false e cole o link do Kiwify abaixo.
+    comingSoon: true,
+    checkoutUrl: "https://pay.kiwify.com.br/SEU-LINK-AQUI",
+  },
 ];

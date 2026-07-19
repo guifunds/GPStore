@@ -120,6 +120,13 @@ body {
 
 .btn-ghost:hover { border-color: var(--text); }
 
+.btn-disabled {
+  background: #e8e8ed;
+  color: #86868b;
+  cursor: default;
+  pointer-events: none;
+}
+
 /* ============ Products ============ */
 .products-section {
   background: var(--bg-soft);
